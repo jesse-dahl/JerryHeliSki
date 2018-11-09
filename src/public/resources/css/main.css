@@ -182,57 +182,55 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-}
-
-#slider {
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height:100vh;
-    animation: slide 40s infinite;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  width: auto;
+  height:100%;
+  animation: slide 40s infinite;
 }
 
 @keyframes slide {
     0% {
-        background-image: url("../images/img1.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)), url("../images/img1.jpg");
     }
 
     20% {
-        background-image: url("../images/img1.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)), url("../images/img1.jpg")
     }
 
     20.01% {
-        background-image: url("../images/img2.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img2.jpg")
     }
 
     40% {
-        background-image: url("../images/img2.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img2.jpg")
     }
 
     40.01% {
-        background-image: url("../images/img3.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img3.jpg")
     }
 
     60% {
-        background-image: url("../images/img3.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img3.jpg")
     }
 
     60.01% {
-        background-image: url("../images/img4.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img4.jpg")
     }
 
     80% {
-        background-image: url("../images/img4.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img4.jpg")
     }
 
     80.01% {
-        background-image: url("../images/img5.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img5.jpg")
     }
 
     100% {
-        background-image: url("../images/img5.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img5.jpg")
     }
 }
 
@@ -243,7 +241,7 @@ header.masthead hr {
 
 header.masthead h1 {
   font-size: 2rem;
-  text-shadow: 1px 2px rgb(58, 58, 58);
+  
 }
 
 header.masthead p {

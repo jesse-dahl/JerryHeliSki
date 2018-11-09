@@ -588,12 +588,13 @@ pre code {
 }
 
 .row {
+  
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  text-shadow: 0px 1px 14px rgba(0,0,0,1.0);
+  padding: 30px -30%;
 }
 
 .no-gutters {
@@ -616,7 +617,7 @@ pre code {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
+  padding-right: 5px;
   padding-left: 15px;
 }
 
@@ -7566,7 +7567,7 @@ button.bg-dark:focus {
 
 .mb-5,
 .my-5 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .ml-5,
