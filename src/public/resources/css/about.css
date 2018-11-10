@@ -93,7 +93,7 @@ img::-moz-selection {
 
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: rgba(255, 255, 255, 0.658);
+  background-color: rgba(0,0,0,0.5);
   text-shadow: 0 0 3px #444444;
   font-weight: 900;
   font-size: 1.4rem !important;
@@ -194,43 +194,43 @@ header.masthead {
 
 @keyframes slide {
     0% {
-        background-image: linear-gradient( rgba(0,0,0,0.08), rgba(0, 0, 0, 0.08)), url("../images/img1.jpg");
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)), url("../images/img1.jpg");
     }
 
     20% {
-        background-image: linear-gradient( rgba(0,0,0,0.08), rgba(0, 0, 0, 0.08)), url("../images/img1.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)), url("../images/img1.jpg")
     }
 
     20.01% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img2.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img2.jpg")
     }
 
     40% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img2.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img2.jpg")
     }
 
     40.01% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img3.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img3.jpg")
     }
 
     60% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img3.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img3.jpg")
     }
 
     60.01% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img4.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img4.jpg")
     }
 
     80% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img4.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img4.jpg")
     }
 
     80.01% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img5.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img5.jpg")
     }
 
     100% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img5.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)),url("../images/img5.jpg")
     }
 }
 
@@ -371,5 +371,3 @@ header.masthead p {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
-
-
