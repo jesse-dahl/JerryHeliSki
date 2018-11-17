@@ -194,11 +194,13 @@ header.masthead {
 
 @keyframes slide {
     0% {
-        background-image: linear-gradient( rgba(0,0,0,0.08), rgba(0, 0, 0, 0.08)), url("../images/img1.jpg");
+        background-image: url("../images/img1.jpg");
+        background-color: rgba(0, 0, 0, 0.3);
     }
 
     20% {
-        background-image: linear-gradient( rgba(0,0,0,0.08), rgba(0, 0, 0, 0.08)), url("../images/img1.jpg")
+        background-image: url("../images/img1.jpg");
+        background-color: rgba(0, 0, 0, 0.3);
     }
 
     20.01% {
