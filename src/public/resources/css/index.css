@@ -17,14 +17,18 @@ html {
 }
 
 body {
-    font-size: 15px;
-    font-size: 1.5rem;
+    background: #fff;
+    color: #222;
+    padding: 0;
+    margin: 0;
     font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
-    color: #5f6871;
-    line-height: 1.6;
-    background:#f3f3f3;
+    line-height: 1;
+    position: relative;
+    display: block;
+    cursor: default;
+    overflow: hidden;
 }
 
 html, body{
@@ -52,29 +56,6 @@ a:focus {
 
 a img {
     border: none;
-}
-
-.just-image>img {
-  max-width: 100%;
-  width: 400px;
-  height: auto;
-  vertical-align: middle;
-  float: right;
-}
-
-img {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  vertical-align: middle;
-  position: absolute;
-  right: 0;
-}
-
-.information{
-  margin: 0;
-  padding: 0;
-  width: 70%;
 }
 
 .left {
@@ -107,6 +88,11 @@ img {
 
 .antialiased {
     -webkit-font-smoothing: antialiased;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 textarea {
@@ -161,12 +147,7 @@ h2 {
 }
 
 h3 {
-  display: block;
-  font-size: 1.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+    font-size: 1.375em;
 }
 
 h4 {
@@ -187,125 +168,6 @@ hr {
     clear: both;
     margin: 1.25em 0 1.1875em;
     height: 0;
-}
-
-h3>span{
-  font-size:1.3rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 600;
-  margin: 0 0 10px;
-  line-height: 1;
-  color: #2f6e87;
-  display:block;
-  margin-bottom:10px;
-}
-
-h3>.jerryName{
-  font-size:3.5rem;
-  font-weight:normal;
-  line-height:1.1;
-  margin: 0 0 35px;
-  letter-spacing: 0;
-  color: #1d2431;
-}
-
-h3>.h3{
-  font-size: 35px;
-  font-size: 3.5rem;
-  font-weight: normal;
-  line-height :1.1;
-  margin: 0 0 35px;
-  letter-spacing: 0;
-}
-
-.information>.aboutJerry{
-  font-size: 1.6rem;
-}
-
-.main-about:first-child{
-  margin-top: 0;
-}
-
-@media (min-width:600px){
-  .main-about{
-    width: 65.21739%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0;
-    clear: none;
-  }
-}
-
-.main-about {
-  margin-top: 75px;
-  margin-bottom: 75px;
-  clear: both !important;
-  width: 86.66666%;
-  float: left;
-  margin-right: 100%;
-  margin-left: 0;
-  clear: none;
-  margin-top: 0;
-}
-
-@media (min-width: 768px){
-  main.content {
-    padding-bottom: 200px;
-  }
-}
-
-main.content{
-  min-height: 100vh;
-  padding-bottom: 100px;
-  padding-top: 200px;
-  position: relative;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: none;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-.container-fluid {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-main{
-  display: block;
-}
-
-section{
-  display: block;
 }
 
 ul,
@@ -358,6 +220,15 @@ ol li ul,
 ol li ol {
     margin-left: 1.25em;
     margin-bottom: 0;
+}
+
+dl dt {
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+dl dd {
+    margin-bottom: 0.75em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -573,6 +444,105 @@ div {
     display: block;
 }
 
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 56px);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    width: auto;
+    height:100%;
+    animation: slide 40s infinite;
+  }
+
+@keyframes slide {
+    0% {
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img7.jpg");
+    }
+
+    20% {
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img7.jpg");
+    }
+
+    20.01% {
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img12.jpg")
+    }
+
+    40% {
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img12.jpg")
+    }
+
+    40.01% {
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img8.jpg")
+    }
+
+    60% {
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img8.jpg")
+    }
+
+    60.01% {
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img10.jpg")
+    }
+
+    80% {
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img10.jpg")
+    }
+
+    80.01% {
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img9.JPG")
+    }
+
+    100% {
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img9.JPG")
+    }
+}
+
+header.masthead hr {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+  
+}
+
+header.masthead p {
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 2px 2px 3px rgb(24, 24, 24);
+}
+
+@media (min-width: 768px) {
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: -40px;
+    padding-bottom: 0;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 4rem;
+  }
+}
+
+.text-primary {
+  color: #F05F40 !important;
+}
+
 .btn {
   font-weight: 700;
   text-transform: uppercase;
@@ -599,3 +569,43 @@ div {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+  .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }

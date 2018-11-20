@@ -22,6 +22,7 @@ a {
   color: #F05F40;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  text-decoration: none;
 }
 
 a:hover {
@@ -58,10 +59,16 @@ h2 {
 
 section {
   padding: 13.5rem 0;
+  display: block;
 }
 
 .section-heading {
   margin-top: 0;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle !important;
 }
 
 ::-moz-selection {
@@ -92,11 +99,18 @@ img::-moz-selection {
 }
 
 #mainNav {
+  padding: 15px 15px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 76.875em;
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: rgba(255, 255, 255, 0.658);
+  background-color: rgba(255, 255, 255) !important;
   text-shadow: 0 0 3px #444444;
-  font-weight: 900;
-  font-size: 1.4rem !important;
+  font-weight: 1200 !important;
+  font-size: 1.8rem !important;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -115,7 +129,7 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #212529;
@@ -194,45 +208,43 @@ header.masthead {
 
 @keyframes slide {
     0% {
-        background-image: url("../images/img1.jpg");
-        background-color: rgba(0, 0, 0, 0.3);
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img7.jpg");
     }
 
     20% {
-        background-image: url("../images/img1.jpg");
-        background-color: rgba(0, 0, 0, 0.3);
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img7.jpg");
     }
 
     20.01% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img2.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img12.jpg")
     }
 
     40% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img2.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img12.jpg")
     }
 
     40.01% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img3.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img8.jpg")
     }
 
     60% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img3.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img8.jpg")
     }
 
     60.01% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img4.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img10.jpg")
     }
 
     80% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img4.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img10.jpg")
     }
 
     80.01% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img5.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img9.JPG")
     }
 
     100% {
-        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img5.jpg")
+        background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)),url("../images/img9.JPG")
     }
 }
 
@@ -373,5 +385,3 @@ header.masthead p {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
-
-
