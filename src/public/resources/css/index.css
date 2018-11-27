@@ -609,3 +609,59 @@ header.masthead p {
     margin-right: auto;
     margin-left: auto;
   }
+
+  .footer-basic-centered{
+    background-color: #1a1a1a;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+
+.footer-basic-centered .footer-company-name{
+	color:  #8f9296;
+	font: normal 14px sans-serif;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-links{
+	list-style: none;
+    font-weight: 400;
+	color:  #ffffff;
+	padding: 20px 0 40px;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.footer-basic-centered .footer-links a{
+	display:inline-block;
+	text-decoration: none;
+    color: inherit;
+    width: 5em;
+}
+
+@media (max-width: 600px) {
+
+	.footer-basic-centered{
+		padding: 35px;
+	}
+
+	.footer-basic-centered .footer-company-motto{
+		font-size: 18px;
+	}
+
+	.footer-basic-centered .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-basic-centered .footer-links{
+		font-size: 14px;
+		padding: 25px 0 20px;
+	}
+
+	.footer-basic-centered .footer-links a{
+		line-height: 1.8;
+	}
+}

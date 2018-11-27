@@ -17,14 +17,17 @@ html {
 }
 
 body {
+    padding: 0;
+    margin: 0;
     font-size: 15px;
     font-size: 1.5rem;
     font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
-    color: #5f6871;
+    color: #222;
     line-height: 1.6;
     background:#f3f3f3;
+    cursor: default;
 }
 
 html, body{
@@ -54,17 +57,85 @@ a img {
     border: none;
 }
 
+.p-header {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 768px){
+    .p-header{
+        background-size: 100% auto !important;
+        background-position: 50% -310.868px !important;
+    }
+}
+
+@media only screen and (min-width: 548px){
+    .p-header{
+        background-size: auto auto;
+        background-image: url("../images/gallery/img0086.jpg");
+        background-position: 50% -150.868px;
+    }
+}
+
+.header-overlay {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 6% 0;
+}
+
+@media only screen and (min-width: 768px){
+    .header-overlay{
+        padding: 3% 0;
+    }
+}
+
+.header-center {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 76.875em;
+}
+
+.header-center h1{
+    font-size: 6em;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 768px){
+    .header-center h1{
+        font-size: 6em !important;
+        letter-spacing: 10px;
+    }
+}
+
+@media only screen and (min-width: 548px){
+    .header-center h1{
+        font-size: 4em;
+        letter-spacing: 10px;
+    }
+}
+
 .just-image>img {
   max-width: 100%;
   width: 400px;
   height: auto;
-  vertical-align: middle;
   margin: 0;
   padding: 0;
-  display: inline-block;
   vertical-align: middle;
-  position: absolute;
-  right: 0;
+  float: right;
 }
 
 .just-image2>img {
@@ -73,9 +144,7 @@ a img {
   height: auto;
   margin: 0;
   padding: 0;
-  display: inline-block;
-  position: absolute;
-  left: 0;
+  float: left;
 }
 
 .information{
@@ -168,7 +237,6 @@ h6 {
 h1 {
     font-size: 2.125em;
     color: #fff;
-    text-shadow: 2px 2px 8px #131313;
 }
 
 h2 {
@@ -231,8 +299,8 @@ h3>.jerryHistory{
   line-height: 1.1;
   margin: 0 0 35px;
   letter-spacing: 0;
-  color: #1d2431;
   float: right;
+  color: #1d2431;
 }
 
 h3>.h3{
@@ -251,11 +319,26 @@ h3>.h3{
   text-align: justify;
 }
 
+.information>.h3{
+    float: left;
+}
+
 .information2>.aboutBusiness{
   font-size: 1.6rem;
-  width:70%;
+  width: 63%;
   float: right;
   text-align: justify;
+}
+
+section.main-content{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 76.875em;
+    padding: 30px 0 0;
+    overflow: hidden;
 }
 
 .main-about:first-child{
@@ -266,7 +349,6 @@ h3>.h3{
   .main-about{
     width: auto;
     height: auto;
-    float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none;
@@ -299,12 +381,11 @@ h3>.h3{
 }
 
 .company-about {
-  margin: 110px 0 100px 113px;
+  margin: 0 0 130px 0;
   padding: 0;
   clear: both !important;
-  float: right;
   clear: none;
-  width: 90%;
+  width: auto;
   height: auto;
   overflow:hidden;
 
@@ -518,7 +599,6 @@ ol li ol {
 .menu {
     display: block;
     padding: 0;
-    
     *zoom: 1;
     margin-top: 15px;
     margin-bottom: 0;
@@ -659,4 +739,67 @@ div {
 .btn-primary:active, .btn-primary:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+.footer-basic-centered{
+    background-color: #1a1a1a;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+
+.footer-basic-centered .footer-company-name{
+	color:  #8f9296;
+	font: normal 14px sans-serif;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-links{
+	list-style: none;
+    font-weight: 400;
+	color:  #ffffff;
+	padding: 20px 0 40px;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.footer-basic-centered .footer-links a{
+	display:inline-block;
+	text-decoration: none;
+    color: inherit;
+    width: 5em;
+}
+
+@media (max-width: 600px) {
+
+	.footer-basic-centered{
+		padding: 35px;
+	}
+
+	.footer-basic-centered .footer-company-motto{
+		font-size: 18px;
+	}
+
+	.footer-basic-centered .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-basic-centered .footer-links{
+		font-size: 14px;
+		padding: 25px 0 20px;
+	}
+
+	.footer-basic-centered .footer-links a{
+		line-height: 1.8;
+	}
+}
+
+@media only screen and (min-width: 768px){
+main {
+    padding: 0 15px;
+    background: #f3f3f3;
+    }
 }
