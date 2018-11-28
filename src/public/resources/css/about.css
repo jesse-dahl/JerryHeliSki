@@ -68,7 +68,7 @@ a img {
 @media only screen and (min-width: 768px){
     .p-header{
         background-size: 100% auto !important;
-        background-position: 50% -310.868px !important;
+        background-position: 50% -220.868px !important;
     }
 }
 
@@ -89,7 +89,7 @@ a img {
 
 @media only screen and (min-width: 768px){
     .header-overlay{
-        padding: 3% 0;
+        padding: 6% 0;
     }
 }
 
@@ -116,7 +116,7 @@ a img {
 
 @media only screen and (min-width: 768px){
     .header-center h1{
-        font-size: 6em !important;
+        font-size: 5em !important;
         letter-spacing: 10px;
     }
 }
@@ -336,7 +336,7 @@ section.main-content{
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    max-width: 76.875em;
+    max-width: 72.875em;
     padding: 30px 0 0;
     overflow: hidden;
 }
@@ -698,6 +698,33 @@ ol li ol {
 
 .menu>li>a:hover {
     border: 3px solid rgb(0, 0, 0);
+    color: #181818;
+}
+
+.drop-down-items {
+    display: none;
+}
+
+.menu .menu-item-127:hover .drop-down .drop-down-items{
+    display: block;
+}
+
+.drop-down-items a {
+    font-family: "Tungsten A", "Tungsten B";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    color: #525252;
+    border: 3px solid #f3f3f3;
+    text-transform: uppercase;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+.menu>li>ul>li>a:hover {
     color: #181818;
 }
 
