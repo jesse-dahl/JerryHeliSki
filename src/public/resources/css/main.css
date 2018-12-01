@@ -276,7 +276,7 @@ img, object {
   font-family: "Tungsten A", "Tungsten B";
   font-weight: 400;
   font-style: normal;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   padding: 0 15px;
   display: inline-block;
@@ -296,7 +296,7 @@ img, object {
 
 @media only screen and (min-width: 1024px) {
   .menu>li>a {
-      font-size: 28px;
+      font-size: 20px;
   }
 }
 
@@ -315,24 +315,38 @@ img, object {
   color: #181818;
 }
 
+.drop-down{
+  padding-inline-start: 0;
+}
+
 .drop-down-items {
   display: none;
 }
 
-.menu .menu-item-127:hover .drop-down .drop-down-items{
+.menu-item-2667{
+  width: auto !important;
+}
+
+.menu .menu-item-2667:hover .drop-down .drop-down-items{
   display: block;
+  padding: 0;
+  width: auto;
 }
 
 .drop-down-items a {
   font-family: "Tungsten A", "Tungsten B";
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 14px;
   text-align: center;
   display: inline-block;
   color: #525252;
-  border: 3px solid #f3f3f3;
+  border: 3px solid transparent;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  margin: 0px;
   -webkit-transition: all 300ms ease-out;
   -moz-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
@@ -344,7 +358,7 @@ img, object {
 
 main{
   width: 100%;
-  height: 89%;
+  height: 85%;
 }
 
 @media only screen and (min-width: 768px){
@@ -355,7 +369,7 @@ main{
 }
 
 .main-title h1{
-  font-size: 5em;
+  font-size: 3em;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
@@ -372,7 +386,7 @@ hr {
 }
 
 .sub-title p{
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   font-style: normal;
   color: #ffffff;

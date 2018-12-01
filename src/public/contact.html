@@ -12,7 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this site -->
-    <link href="resources/css/personalContact.css" rel="stylesheet">
+    <link href="resources/css/contact.css" rel="stylesheet">
     
 </head>
 
@@ -22,7 +22,13 @@
         <div class="header">
                 <div class="nav-a">
                     <ul class="menu">
-                        <li class="menu-item-2667"><a href="index.html">Trips</a></li>
+                        <li class="menu-item-2667"><a href="index.html">Trips</a>
+                            <ul class="drop-down">
+                                <li class="drop-down-items"><a href="#">Alaska Trip</a></li>
+                                <li class="drop-down-items"><a href="#">Chile Trip</a></li>
+                                <li class="drop-down-items"><a href="#">Argentina Trip</a></li>
+                            </ul>
+                        </li>
                         <li class="menu-item-20"><a href="gallery.html">Gallery</a></li>
                     </ul>
                 </div>
@@ -30,12 +36,7 @@
                 <div class="nav-b">
                     <ul class="menu">
                         <li class="menu-item-126"><a href="about.html">About</a></li>
-                        <li class="menu-item-127"><a href="#">Contact</a>
-                            <ul class="drop-down">
-                                <li class="drop-down-items"><a href="#">Personal</a></li>
-                                <li class="drop-down-items"><a href="#">Booking</a></li>
-                            </ul>
-                        </li>
+                        <li class="menu-item-127"><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
         </div>
@@ -57,20 +58,19 @@
                     <h1>Contact Us</h1>
                     <h3>Please fill out the form below and we will be in touch as soon as possible</h3>
                     <div class="contact-form">
-                        <form method="POST" action="#" accept-charset="UTF-8">
-                            <input type="text" required placeholder="Name" name="name" class="contact-form-field">
+                        <form method="POST" action="resources/php/contact-form.php" accept-charset="UTF-8">
+                            <input type="text" required placeholder="Full name" name="name" class="contact-form-field">
                             <input type="text" required placeholder="Your email address" class="contact-form-field" name="email">
+                            <input type="text" required placeholder="Subject" class="contact-form-field" name="subject">
                             <textarea required placeholder="Enter your message" id="comments" class="contact-form-field" name="comments"></textarea>
-                            <input name="login" type="submit" value="Submit" class="submit-btn button button-blue margin-t25">
+                            <input name="submit" type="submit" value="Submit" class="submit-btn button button-blue margin-t25">
                         </form>
                     </div>
                 </div>
                 <div class="main-right">
                     <h3>Jerry Hance</h3>
                     <p>
-                        (406)-587-2043
-                        <br>
-                        16238 Bullwheel Drive
+                        (406)-451-4328
                         <br>
                         Bozeman, Montana 59715
                     </p>

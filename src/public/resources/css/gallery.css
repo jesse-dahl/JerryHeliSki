@@ -99,6 +99,12 @@ li {
     text-align: -webkit-match-parent;
 }
 
+ol li ul,
+ol li ol {
+    margin-left: 1.25em;
+    margin-bottom: 0;
+}
+
 section.main-content{
     width: 100%;
     margin-left: auto;
@@ -311,24 +317,39 @@ img, object {
     color: #181818;
 }
 
+.drop-down{
+    padding-inline-start: 0;
+    margin: 0;
+}
+
 .drop-down-items {
     display: none;
 }
 
-.menu .menu-item-127:hover .drop-down .drop-down-items{
+.menu-item-2667 {
+    width: auto !important;
+}
+
+.menu .menu-item-2667:hover .drop-down .drop-down-items{
     display: block;
+    padding: 0;
+    width: auto;
 }
 
 .drop-down-items a {
     font-family: "Tungsten A", "Tungsten B";
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
     display: inline-block;
     color: #525252;
     border: 3px solid #f3f3f3;
     text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    margin: 0px;
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
