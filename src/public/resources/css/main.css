@@ -280,7 +280,7 @@ img, object {
   text-align: center;
   padding: 0 15px;
   display: inline-block;
-  color: #525252;
+  color: #ffeaea;
   border: 3px solid transparent;
   text-transform: uppercase;
   -webkit-transition: all 300ms ease-out;
@@ -311,8 +311,8 @@ img, object {
 }
 
 .menu>li>a:hover {
-  border: 3px solid rgb(0, 0, 0);
-  color: #181818;
+  border: 3px solid #333333;
+  color: #3a3a3a;
 }
 
 .drop-down{
@@ -340,7 +340,7 @@ img, object {
   font-size: 14px;
   text-align: center;
   display: inline-block;
-  color: #525252;
+  color: #d6d6d6;
   border: 3px solid transparent;
   text-transform: uppercase;
   margin-left: auto;
@@ -353,7 +353,7 @@ img, object {
 }
 
 .menu>li>ul>li>a:hover {
-  color: #181818;
+  color: rgb(37, 37, 37);
 }
 
 main{
@@ -377,7 +377,7 @@ main{
   margin: 0;
   line-height: 1.5;
   letter-spacing: 2px;
-  text-shadow: 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 3px rgba(32, 32, 32, 0.2);
 }
 
 hr {
@@ -392,7 +392,7 @@ hr {
   color: #ffffff;
   margin: 0;
   line-height: 3.5;
-  text-shadow: 3px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 2px rgba(32, 32, 32, 0.2);
 }
 
 .header-center:before,
