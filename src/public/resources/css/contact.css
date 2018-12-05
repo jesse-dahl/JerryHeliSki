@@ -179,29 +179,29 @@ section.main-content{
     padding: 15px 50px;
 }
 
-.button-blue{
-    background-color: #14AAF5 !important;
-    color: #fff !important;
-}
-
 .margin-t25 {
     margin-top: 25px;
 }
 
 .button{
     padding: 18px 35px;
-    background: #fff;
     display: inline-block;
-    border-radius: 3px;
-    border: 0;
-    outline: 0;
-    color: #000;
+    border: 2px solid #1a1a1a;
+    border-radius: 4px;
+    color: #f3f3f3;
+    background-color: #1a1a1a;
     font-size: 14px;
     letter-spacing: .1em;
-    font-weight: 600;
     cursor: pointer;
-    transition: background .25s ease-in-out;
+    transition: 0.3s ease-in-out;
     text-transform: uppercase;
+}
+
+.button:hover{
+    transition: 0.3s ease-in-out;
+    border: 2px solid #1a1a1a;
+    background-color: #f3f3f3;
+    color: #1a1a1a;
 }
 
 input, textarea{
