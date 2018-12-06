@@ -275,7 +275,7 @@ img, object {
 }
 
 .menu>li>a {
-    font-family: "Tungsten A", "Tungsten B";
+    font-family: Lato, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
@@ -299,12 +299,6 @@ img, object {
 @media only screen and (min-width: 1024px) {
     .menu>li>a {
         font-size: 28px;
-    }
-}
-
-@media only screen and (min-width: 1230px) {
-    .menu>li>a {
-        font-size: 30px;
     }
 }
 

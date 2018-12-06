@@ -27,9 +27,9 @@ body {
   color: #222;
   line-height: 1.6;
   cursor: default;
-  background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)), url("../images/img8.jpg") !important;
+  background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)), url("../images/img10.jpg") !important;
   background-size: cover;
-  background-position: center center;
+
   background-repeat: no-repeat;
 }
 
@@ -43,7 +43,7 @@ html, body{
 h1 {
   font-size: 2.125em;
   color: #fff;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 header {
@@ -103,6 +103,7 @@ li {
 }
 
 section.main-content{
+  position: absolute;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -273,7 +274,7 @@ img, object {
 }
 
 .menu>li>a {
-  font-family: "Tungsten A", "Tungsten B";
+  font-family: Lato,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
@@ -281,11 +282,10 @@ img, object {
   padding: 0 15px;
   display: inline-block;
   color: #ffeaea;
-  border: 3px solid transparent;
   text-transform: uppercase;
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (min-width: 768px) {
@@ -296,13 +296,7 @@ img, object {
 
 @media only screen and (min-width: 1024px) {
   .menu>li>a {
-      font-size: 20px;
-  }
-}
-
-@media only screen and (min-width: 1230px) {
-  .menu>li>a {
-      font-size: 30px;
+      font-size: 28px;
   }
 }
 
@@ -311,8 +305,10 @@ img, object {
 }
 
 .menu>li>a:hover {
-  border: 3px solid #333333;
-  color: #3a3a3a;
+  border: 2px solid #1a1a1a;
+  border-radius: 4px;
+  color: #1a1a1a;
+  transition: all 0.3s ease-in-out;
 }
 
 .drop-down{
@@ -334,7 +330,7 @@ img, object {
 }
 
 .drop-down-items a {
-  font-family: "Tungsten A", "Tungsten B";
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -386,6 +382,7 @@ hr {
 }
 
 .sub-title p{
+  font-family: Lato, sans-serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
