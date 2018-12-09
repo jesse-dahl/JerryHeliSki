@@ -117,14 +117,14 @@ section.main-content{
 }
 
 a {
-    color: red;
+    color: #f3f3f3;
     text-decoration: none;
     line-height: inherit;
 }
 
 a:hover,
 a:focus {
-    color: #e60000;
+    color: #f3f3f3;
 }
 
 a img {
@@ -360,7 +360,7 @@ main{
     background-size: 145% auto;
     width: 100%;
     overflow: hidden;
-    font-size: 10px;
+    font-size: 6px;
     background-image: url("../../images/img267.png");
     background-position: 50% -1.868px !important;
 

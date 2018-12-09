@@ -116,17 +116,6 @@ section.main-content{
     overflow: hidden;
 }
 
-a {
-    color: #f3f3f3;
-    text-decoration: none;
-    line-height: inherit;
-}
-
-a:hover,
-a:focus {
-    color: #f3f3f3;
-}
-
 a img {
     border: none;
 }
@@ -271,6 +260,7 @@ img, object {
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -335,6 +325,7 @@ img, object {
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
+    text-decoration: none;
 }
 
 .menu>li>ul>li>a:hover {
@@ -362,7 +353,7 @@ main{
     overflow: hidden;
     background-image: url("../../images/img302.jpg");
     background-position: 50% -0.868px;
-    font-size: 10px;
+    font-size: 6px;
 }
 
 @media only screen and (min-width: 768px){
@@ -599,10 +590,14 @@ table tbody td a:hover{
     }
 }
 
-@media (min-width: 600px){
+@media (min-width: 768px){
     .table-info table thead th{
         padding-top: 40px;
         padding-bottom: 20px;
+    }
+
+    .button{
+        display: inline-flex !important;
     }
 }
 
@@ -620,7 +615,8 @@ table tbody td a:hover{
 .button{
     width: auto;
     height: auto;
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     padding-top: 25px;
 }
 
