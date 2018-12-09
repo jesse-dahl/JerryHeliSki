@@ -32,7 +32,7 @@ body {
 
 html, body{
     margin: 0;
-    height: 100%;
+    height: auto;
     width: 100%;
     font-size: 100%;
 }
@@ -117,12 +117,12 @@ section.main-content{
 }
 
 .main-content .wrap .main-left{
-    display: inline-block;
+    display: contents;
     padding-right: 10%;
     vertical-align: top;
     width: 70%;
     line-height: 1.5;
-    text-align: left;
+    text-align: center;
 }
 
 .main-content .wrap .main-left h1 {
@@ -134,16 +134,15 @@ section.main-content{
 }
 
 .main-content .wrap .main-left h3{
-    font-size: 25px;
+    font-size: 20px;
     margin: 15px 0 10px;
     font-weight: 500;
     padding: 0;
 }
 
 .main-content .wrap .main-right{
-    text-align: left;
+    text-align: center;
     display: inline-block;
-    width: 25%;
     line-height: 1.5;
 }
 
@@ -162,6 +161,7 @@ section.main-content{
 
 .main-content .contact-form{
     margin-top: 30px;
+    padding-bottom: 60px;
 }
 
 .main-content .contact-form .contact-form-field{
@@ -171,7 +171,7 @@ section.main-content{
     width: 80%;
     padding: 15px 20px;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .main-content .contact-form .submit-btn{
@@ -223,6 +223,47 @@ a:focus {
     header {
         padding: 0 15px;
     }
+
+    .main-content .contact-form{
+        padding: 0;
+    }
+
+    .main-content .contact-form .contact-form-field{
+        font-size: 20px;
+    }
+
+    .main-content .wrap .main-left{
+        display: inline-block;
+        text-align: left;
+    }
+
+    .main-content .wrap .main-right{
+        text-align: left;
+        width: 25%;
+    }
+
+    .main-content .wrap .main-left h3{
+        font-size: 25px;
+    }
+}
+
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 30px;
+    display: block;
+}
+
+.menu.active{
+    display: inline-grid;
+}
+
+@media only screen and (min-width: 768px) {
+    .toggle{
+        display: none;
+    }
 }
 
 .header {
@@ -233,6 +274,7 @@ a:focus {
     margin-top: 0;
     margin-bottom: 0;
     max-width: 60.875em;
+    text-align: center;
 }
 
 .header:before,
@@ -245,59 +287,22 @@ a:focus {
     clear: both;
 }
 
-.header>.nav-a {
-    display: none;
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    margin: auto;
-    width: 100%;
-    float: left;
-}
-
-.header>.nav-b {
-    display: none;
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    margin: auto;
-    width: 100%;
-    float: right;
-}
-
-@media (min-width: 768px){
-    .header>.nav-a {
-        display: block;
-        position: relative;
-        padding-left: 0;
-        padding-right: 0;
-        margin: auto;
-        width: 50%;
-        right: auto;
-        left: auto;
-        float: left;
-    }
-    .header>.nav-b{
-        display: block;
-        position: relative;
-        padding-left: 0;
-        padding-right: 0;
-        margin: auto;
-        width: 50%;
-        right: auto;
-        left: auto;
-        float: right;
-    }
-}
-
 .menu {
-    display: block;
     padding: 0;
     *zoom: 1;
     margin-top: 15px;
     margin-bottom: 0;
     margin-right: 0;
     margin-left: 0;
+    display: none;
+    justify-content: center;
+    line-height: 2
+}
+
+@media only screen and (min-width: 768px){
+    .menu{
+        display: inline-flex !important;
+    }
 }
 
 .menu:before,
@@ -359,7 +364,7 @@ a:focus {
     font-size: 24px;
     text-align: center;
     padding: 0 15px;
-    display: inline-block;
+    display: flex;
     color: #525252;
     border: 3px solid #f3f3f3;
     text-transform: uppercase;
@@ -371,6 +376,20 @@ a:focus {
 @media only screen and (min-width: 768px) {
     .menu>li>a {
         font-size: 20px;
+        display: inline-block;
+    }
+
+    .menu>li>a.active {
+        color: #111;
+    }
+
+    .menu>li>a:hover {
+        border: 3px solid #333333;
+        color: #3a3a3a;
+    }
+
+    .drop-down-items a{
+        display: inline-flex !important;
     }
 }
 
@@ -378,15 +397,6 @@ a:focus {
     .menu>li>a {
         font-size: 28px;
     }
-}
-
-.menu>li>a.active {
-    color: #111;
-}
-
-.menu>li>a:hover {
-    border: 3px solid #333333;
-    color: #3a3a3a;
 }
 
 .drop-down{
@@ -414,7 +424,7 @@ a:focus {
     font-style: normal;
     font-size: 14px;
     text-align: center;
-    display: inline-block;
+    display: flex;
     color: #525252;
     border: 3px solid #f3f3f3;
     text-transform: uppercase;

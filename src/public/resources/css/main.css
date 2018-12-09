@@ -29,14 +29,28 @@ body {
   cursor: default;
   background-image: linear-gradient( rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)), url("../images/img10.jpg") !important;
   background-size: cover;
-
+  background-position: 50% -8.868px;
   background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 768px){
+  body{
+    background-position: 50% -0.868px;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  body{
+    background-position: 50% -0.868px;
+  }
 }
 
 html, body{
   margin: 0;
-  height: 100%;
+  height: auto;
   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   font-size: 100%;
 }
 
@@ -110,9 +124,15 @@ section.main-content{
   margin-top: 0;
   margin-bottom: 0;
   max-width: 76.875em;
-  padding: 100px 0 100px;
+  padding: 50px 0 100px;
   overflow: hidden;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px){
+  section.main-content{
+    padding: 100px 0 100px;
+  }
 }
 
 a {
@@ -146,79 +166,63 @@ img, object {
     }
 }
 
+.toggle{
+  width: 100%;
+  padding: 10px 20px;
+  text-align: right;
+  box-sizing: border-box;
+  font-size: 30px;
+  display: block;
+  color: #f3f3f3;
+}
+
+.menu.active{
+  display: inline-grid;
+}
+
+@media only screen and (min-width: 768px) {
+  .toggle{
+      display: none;
+  }
+}
+
 .header {
-    padding: 0px 0px 15px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: 60.875em;
+  padding: 0px 0px 15px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 60.875em;
+  text-align: center;
 }
 
 .header:before,
 .header:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .header:after {
-    clear: both;
-}
-
-.header>.nav-a {
-    display: none;
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    margin: auto;
-    width: 100%;
-    float: left;
-}
-
-.header>.nav-b {
-    display: none;
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    margin: auto;
-    width: 100%;
-    float: right;
-}
-
-@media (min-width: 768px){
-  .header>.nav-a {
-    display: block;
-    position: relative;
-    padding-left: 0;
-    padding-right: 0;
-    margin: auto;
-    width: 50%;
-    right: auto;
-    left: auto;
-    float: left;
-  }
-  .header>.nav-b{
-      display: block;
-      position: relative;
-      padding-left: 0;
-      padding-right: 0;
-      margin: auto;
-      width: 50%;
-      right: auto;
-      left: auto;
-      float: right;
-  }
+  clear: both;
 }
 
 .menu {
-  display: block;
   padding: 0;
   *zoom: 1;
   margin-top: 15px;
   margin-bottom: 0;
   margin-right: 0;
   margin-left: 0;
+  display: none;
+  justify-content: center;
+  line-height: 2
+}
+
+@media only screen and (min-width: 768px){
+  .menu{
+      display: inline-flex !important;
+  }
 }
 
 .menu:before,
@@ -280,7 +284,7 @@ img, object {
   font-size: 20px;
   text-align: center;
   padding: 0 15px;
-  display: inline-block;
+  display: flex;
   color: #ffeaea;
   text-transform: uppercase;
   -webkit-transition: all 300ms ease-in-out;
@@ -291,6 +295,22 @@ img, object {
 @media only screen and (min-width: 768px) {
   .menu>li>a {
       font-size: 20px;
+      display: inline-block
+  }
+
+  .menu>li>a.active {
+    color: #111;
+  }
+  
+  .menu>li>a:hover {
+    border: 2px solid #1a1a1a;
+    border-radius: 4px;
+    color: #1a1a1a;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .drop-down-items a{
+    display: inline-flex !important;
   }
 }
 
@@ -300,19 +320,9 @@ img, object {
   }
 }
 
-.menu>li>a.active {
-  color: #111;
-}
-
-.menu>li>a:hover {
-  border: 2px solid #1a1a1a;
-  border-radius: 4px;
-  color: #1a1a1a;
-  transition: all 0.3s ease-in-out;
-}
-
 .drop-down{
   padding-inline-start: 0;
+  margin: 0;
 }
 
 .drop-down-items {
@@ -335,7 +345,7 @@ img, object {
   font-style: normal;
   font-size: 14px;
   text-align: center;
-  display: inline-block;
+  display: flex;
   color: #d6d6d6;
   border: 3px solid transparent;
   text-transform: uppercase;
@@ -354,18 +364,19 @@ img, object {
 
 main{
   width: 100%;
-  height: 85%;
+  height: 93%;
 }
 
 @media only screen and (min-width: 768px){
   main{
       padding: 0 15px;
       background: transparent;
+      height: 86%;
   }
 }
 
 .main-title h1{
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
@@ -383,13 +394,31 @@ hr {
 
 .sub-title p{
   font-family: Lato, sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
   font-style: normal;
   color: #ffffff;
   margin: 0;
-  line-height: 3.5;
+  line-height: 1.8;
   text-shadow: 0px 2px rgba(32, 32, 32, 0.2);
+}
+
+@media only screen and (min-width: 768px){
+  .sub-title p{
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  .main-title h1{
+    font-size: 3em;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  .sub-title p{
+    font-size: 18px;
+    line-height: 3.5;
+  }
 }
 
 .header-center:before,

@@ -32,7 +32,7 @@ body {
 
 html, body{
     margin: 0;
-    height: 100%;
+    height: auto;
     width: 100%;
     font-size: 100%;
 }
@@ -154,16 +154,18 @@ a img {
 
 .information{
   margin: 0;
-  padding: 0;
-  width: auto;
+  width: 100%;
   height: auto;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
 }
 
 .information2{
   margin: 0;
-  padding: 0;
-  width: auto;
+  width: 100%;
   height: auto;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
 }
 
 .left {
@@ -269,6 +271,11 @@ h6 {
     font-size: 1em;
 }
 
+p {
+    display: block;
+    font-size: 20px;
+}
+
 hr {
     border: solid #ddd;
     border-width: 3px 0 0;
@@ -299,12 +306,12 @@ h3>.jerryName{
 }
 
 h3>.jerryHistory{
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: normal;
   line-height: 1.1;
   margin: 0 0 35px;
   letter-spacing: 0;
-  float: right;
+  text-align: center;
   color: #1d2431;
 }
 
@@ -318,21 +325,17 @@ h3>.h3{
 }
 
 .information>.aboutJerry{
-  font-size: 1.6rem;
-  width: 63%;
-  float: left;
   text-align: justify;
+  display: contents;
 }
 
 .information>.h3{
-    float: left;
+    text-align: center;
 }
 
 .information2>.aboutBusiness{
-  font-size: 1.6rem;
-  width: 63%;
-  float: right;
   text-align: justify;
+  display: contents;
 }
 
 section.main-content{
@@ -350,7 +353,7 @@ section.main-content{
   margin-top: 0;
 }
 
-@media (min-width:600px){
+@media (min-width:768px){
   .main-about{
     width: auto;
     height: auto;
@@ -358,6 +361,25 @@ section.main-content{
     margin-left: 0;
     clear: none;
   }
+
+  .information .h3{
+      float: left;
+  }
+
+  .aboutJerry p{
+      width: 56%;
+      display: inline-flex;
+  }
+
+  .just-image img{
+      display: block;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+    .aboutJerry p{
+        font-size: 25px !important;
+    }
 }
 
 .main-about {
@@ -375,7 +397,7 @@ section.main-content{
   margin-top: 0;
 }
 
-@media (min-width:600px){
+@media (min-width:768px){
   .company-about{
     width: 65.21739%;
     float: left;
@@ -383,6 +405,26 @@ section.main-content{
     margin-left: 0;
     clear: none;
   }
+
+  .information2 .h3{
+      float: right;
+  }
+
+  .aboutBusiness p{
+      width: 56%;
+      display: inline-flex;
+      float: right;
+  }
+
+  .just-image2 img{
+      display: block;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+    .aboutBusiness p{
+        font-size: 25px !important;
+    }
 }
 
 .company-about {
@@ -536,6 +578,25 @@ ol li ol {
     }
 }
 
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 30px;
+    display: block;
+}
+
+.menu.active{
+    display: inline-grid;
+}
+
+@media only screen and (min-width: 768px) {
+    .toggle{
+        display: none;
+    }
+}
+
 .header {
     padding: 0px 0px 15px;
     width: 100%;
@@ -544,6 +605,7 @@ ol li ol {
     margin-top: 0;
     margin-bottom: 0;
     max-width: 60.875em;
+    text-align: center;
 }
 
 .header:before,
@@ -556,59 +618,22 @@ ol li ol {
     clear: both;
 }
 
-.header>.nav-a {
-    display: none;
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    margin: auto;
-    width: 100%;
-    float: left;
-}
-
-.header>.nav-b {
-    display: none;
-    position: relative;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    margin: auto;
-    width: 100%;
-    float: right;
-}
-
-@media (min-width: 768px){
-    .header>.nav-a {
-        display: block;
-        position: relative;
-        padding-left: 0;
-        padding-right: 0;
-        margin: auto;
-        width: 50%;
-        right: auto;
-        left: auto;
-        float: left;
-    }
-    .header>.nav-b{
-        display: block;
-        position: relative;
-        padding-left: 0;
-        padding-right: 0;
-        margin: auto;
-        width: 50%;
-        right: auto;
-        left: auto;
-        float: right;
-    }
-}
-
 .menu {
-    display: block;
     padding: 0;
     *zoom: 1;
     margin-top: 15px;
     margin-bottom: 0;
     margin-right: 0;
     margin-left: 0;
+    display: none;
+    justify-content: center;
+    line-height: 2
+}
+
+@media only screen and (min-width: 768px){
+    .menu{
+        display: inline-flex !important;
+    }
 }
 
 .menu:before,
@@ -670,7 +695,7 @@ ol li ol {
     font-size: 24px;
     text-align: center;
     padding: 0 15px;
-    display: inline-block;
+    display: flex;
     color: #525252;
     border: 3px solid #f3f3f3;
     text-transform: uppercase;
@@ -682,6 +707,20 @@ ol li ol {
 @media only screen and (min-width: 768px) {
     .menu>li>a {
         font-size: 20px;
+        display: inline-block;
+    }
+
+    .menu>li>a.active {
+        color: #111;
+    }
+
+    .menu>li>a:hover {
+        border: 3px solid #333333;
+        color: #3a3a3a;
+    }
+
+    .drop-down-items a{
+        display: inline-flex !important;
     }
 }
 
@@ -689,15 +728,6 @@ ol li ol {
     .menu>li>a {
         font-size: 28px;
     }
-}
-
-.menu>li>a.active {
-    color: #111;
-}
-
-.menu>li>a:hover {
-    border: 3px solid #333333;
-    color: #3a3a3a;
 }
 
 .drop-down{
@@ -724,7 +754,7 @@ ol li ol {
     font-style: normal;
     font-size: 14px;
     text-align: center;
-    display: inline-block;
+    display: flex;
     color: #525252;
     border: 3px solid #f3f3f3;
     text-transform: uppercase;
@@ -740,7 +770,6 @@ ol li ol {
 .menu>li>ul>li>a:hover {
     color: #181818;
 }
-
 
 div, dl, dt, dd, ul, ol, li, h1, h2, h3, 
 h4, h5, h6, pre, form, p, .gform_heading span, 
