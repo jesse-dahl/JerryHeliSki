@@ -117,8 +117,8 @@ li {
 }
 
 section.main-content{
-  position: absolute;
-  width: 100%;
+  position: relative;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
