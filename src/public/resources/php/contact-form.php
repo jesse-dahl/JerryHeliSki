@@ -5,11 +5,11 @@
         $mailfrom = $_POST['email'];
         $message = $_POST['comments'];
 
-        $mailTo = "jddahl19@yahoo.com";
+        $mailTo = "jerry@jerrysheliskialaska.com";
         $headers = "From: ".$mailFrom;
         $txt = "Your have received an email from ".$name.".\n\n".$message;
 
         mail($mailTo, $subject, $txt, $headers);
-        header("Location: index.html?mailsend");
+        header("Location: ../../contact.html?mailsend");
     }
 ?>

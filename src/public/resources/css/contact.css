@@ -39,7 +39,7 @@ html, body{
 
 h1 {
     font-size: 2.125em;
-    color: #fff;
+    color: #252525;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -114,6 +114,8 @@ section.main-content{
     text-align: center;
     max-width: 100%;
     margin: 0 auto;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
 }
 
 .main-content .wrap .main-left{
@@ -130,7 +132,7 @@ section.main-content{
     margin: 0 0 10px;
     font-weight: 300;
     padding: 0;
-    color: rgba(0, 0, 0)
+    color: #252525 !important;
 }
 
 .main-content .wrap .main-left h3{
@@ -157,6 +159,7 @@ section.main-content{
     margin: 0 0 15px;
     font-weight: 400;
     font-size: 20px;
+    color: #252525;
 }
 
 .main-content .contact-form{
@@ -195,6 +198,8 @@ section.main-content{
     cursor: pointer;
     transition: 0.3s ease-in-out;
     text-transform: uppercase;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .button:hover{
@@ -206,17 +211,30 @@ section.main-content{
 
 input, textarea{
     font: 13px Lato,sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 a {
-    color: red;
+    color: #252525;
     text-decoration: none;
     line-height: inherit;
 }
 
 a:hover,
 a:focus {
-    color: #e60000;
+    color: #252525;
+}
+
+a[href^="tel"]{
+    color: #252525;
+    text-decoration: none;
+}
+
+*[x-apple-data-detectors]{
+    color: inherit !important;
+    cursor: default !important;
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -258,6 +276,11 @@ a:focus {
 
 .menu.active{
     display: inline-grid;
+    width: auto;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -316,11 +339,14 @@ a:focus {
 }
 
 .menu>li {
-    display: inline;
+    display: block;
     height: auto;
+    width: auto !important;
     float: left;
     padding: 0 0.625em 1.25em;
-}
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .menu>li {
     width: 33.33333%;
@@ -388,6 +414,10 @@ a:focus {
         color: #3a3a3a;
     }
 
+    .drop-down{
+        display: grid !important;
+    }
+
     .drop-down-items a{
         display: inline-flex !important;
     }
@@ -399,9 +429,26 @@ a:focus {
     }
 }
 
+.tripActive{
+    justify-content: center;
+}
+  
+.tripActive:hover .drop-down .drop-down-items,
+.tripActive:active .drop-down .drop-down-items{
+    display: inline-block;
+    padding: 0;
+    width: auto;
+    cursor: pointer;
+}
+
 .drop-down{
     padding-inline-start: 0;
-    margin: 0;
+    margin: auto;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    word-spacing: 10px;
+    line-height: 2;
 }
 
 .drop-down-items {
@@ -412,10 +459,22 @@ a:focus {
     width: auto !important;
 }
 
-.menu .menu-item-2667:hover .drop-down .drop-down-items{
-    display: block;
-    padding: 0;
-    width: auto;
+.menu .menu-item-2667:hover .drop-down .drop-down-items,
+.menu .menu-item-2667:active .drop-down .drop-down-items{
+  display: inline-block;
+  padding: 0;
+  width: auto;
+  cursor: pointer;
+}
+
+.menu-item-2667:before,
+.menu-item-2667:after{
+  content: " ";
+  display: table;
+}
+
+.menu-item-2667:after{
+  clear:both;
 }
 
 .drop-down-items a {
@@ -455,7 +514,7 @@ a:focus {
     width: 100%;
     display: block;
     overflow: hidden;
-    background-image: url("../images/img667.jpeg");
+    background-image: url("../images/img4146.jpg");
     background-position: 50% -85.868px;
     font-size: 10px;
 }
@@ -471,7 +530,7 @@ a:focus {
 @media only screen and (min-width: 1024px){
     .p-header{
         background-size: 100% auto !important;
-        background-position: 50% -300.868px !important;
+        background-position: 50% -250.868px !important;
         font-size: 20px;
     }
 }

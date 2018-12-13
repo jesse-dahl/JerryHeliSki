@@ -116,6 +116,11 @@ section.main-content{
     overflow: hidden;
 }
 
+.main-info{
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+}
+
 a {
     color: #f3f3f3;
     text-decoration: none;
@@ -158,6 +163,11 @@ img, object {
 
 .menu.active{
     display: inline-grid;
+    width: auto;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -216,11 +226,14 @@ img, object {
 }
 
 .menu>li {
-    display: inline;
+    display: block;
     height: auto;
+    width: auto !important;
     float: left;
     padding: 0 0.625em 1.25em;
-}
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .menu>li {
     width: 33.33333%;
@@ -288,6 +301,10 @@ img, object {
         color: #3a3a3a;
     }
 
+    .drop-down{
+        display: grid !important;
+    }
+
     .drop-down-items a{
         display: inline-flex !important;
     }
@@ -299,9 +316,26 @@ img, object {
     }
 }
 
+.tripActive{
+    justify-content: center;
+}
+  
+.tripActive:hover .drop-down .drop-down-items,
+.tripActive:active .drop-down .drop-down-items{
+    display: inline-block;
+    padding: 0;
+    width: auto;
+    cursor: pointer;
+}
+
 .drop-down{
     padding-inline-start: 0;
-    margin: 0;
+    margin: auto;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    word-spacing: 10px;
+    line-height: 2;
 }
 
 .drop-down-items {
@@ -312,10 +346,22 @@ img, object {
     width: auto !important;
 }
 
-.menu .menu-item-2667:hover .drop-down .drop-down-items{
-    display: block;
-    padding: 0;
-    width: auto;
+.menu .menu-item-2667:hover .drop-down .drop-down-items,
+.menu .menu-item-2667:active .drop-down .drop-down-items{
+  display: inline-block;
+  padding: 0;
+  width: auto;
+  cursor: pointer;
+}
+
+.menu-item-2667:before,
+.menu-item-2667:after{
+  content: " ";
+  display: table;
+}
+
+.menu-item-2667:after{
+  clear:both;
 }
 
 .drop-down-items a {
@@ -361,15 +407,15 @@ main{
     width: 100%;
     overflow: hidden;
     font-size: 6px;
-    background-image: url("../../images/img267.png");
-    background-position: 50% -1.868px !important;
+    background-image: url("../../images/img3864.jpg");
+    background-position: 50% -30.868px !important;
 
 }
 
 @media only screen and (min-width: 768px){
     .p-header{
         background-size: 115% auto !important;
-        background-position: 50% 0.132px !important;
+        background-position: 50% -50.132px !important;
         font-size: 18px;
     }
 }
@@ -377,7 +423,7 @@ main{
 @media only screen and (min-width: 1024px){
     .p-header{
         background-size: 100% auto !important;
-        background-position: 50% 0.132px !important;
+        background-position: 50% -70.132px !important;
         font-size: 20px;
     }
 }

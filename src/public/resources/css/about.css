@@ -80,7 +80,7 @@ a img {
 @media only screen and (min-width: 1024px){
     .p-header{
         background-size: 100% auto !important;
-        background-position: 50% -445.868px !important;
+        background-position: 50% -400.868px !important;
         font-size: 20px;
     }
 }
@@ -136,7 +136,7 @@ a img {
 .just-image>img {
   max-width: 100%;
   width: 400px;
-  height: auto;
+  height: 75%;
   margin: 0;
   padding: 0;
   vertical-align: middle;
@@ -419,11 +419,17 @@ section.main-content{
   .just-image2 img{
       display: block;
   }
+
+  p{
+      font-size: 16px !important;
+  }
 }
 
 @media only screen and (min-width: 1024px){
-    .aboutBusiness p{
-        font-size: 25px !important;
+    .aboutBusiness p,
+    .aboutJerry p{
+        font-size: 18px !important;
+        line-height: 35px;
     }
 }
 
@@ -591,6 +597,11 @@ ol li ol {
 
 .menu.active{
     display: inline-grid;
+    width: auto;
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -649,11 +660,14 @@ ol li ol {
 }
 
 .menu>li {
-    display: inline;
+    display: block;
     height: auto;
+    width: auto !important;
     float: left;
     padding: 0 0.625em 1.25em;
-}
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .menu>li {
     width: 33.33333%;
@@ -721,6 +735,10 @@ ol li ol {
         color: #3a3a3a;
     }
 
+    .drop-down{
+        display: grid !important;
+    }
+
     .drop-down-items a{
         display: inline-flex !important;
     }
@@ -732,9 +750,26 @@ ol li ol {
     }
 }
 
+.tripActive{
+    justify-content: center;
+}
+  
+.tripActive:hover .drop-down .drop-down-items,
+.tripActive:active .drop-down .drop-down-items{
+    display: inline-block;
+    padding: 0;
+    width: auto;
+    cursor: pointer;
+}
+
 .drop-down{
     padding-inline-start: 0;
-    margin: 0;
+    margin: auto;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    word-spacing: 10px;
+    line-height: 2;
 }
 
 .drop-down-items {
@@ -745,10 +780,18 @@ ol li ol {
     width: auto !important;
 }
 
-.menu .menu-item-2667:hover .drop-down .drop-down-items{
-    display: block;
-    padding: 0;
-    width: auto;
+.menu .menu-item-2667:hover .drop-down .drop-down-items,
+.menu .menu-item-2667:active .drop-down .drop-down-items{
+  display: inline-block;
+  padding: 0;
+  width: auto;
+  cursor: pointer;
+}
+
+.menu-item-2667:before,
+.menu-item-2667:after{
+  content: " ";
+  display: table;
 }
 
 .drop-down-items a {
